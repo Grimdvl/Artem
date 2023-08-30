@@ -11,6 +11,7 @@ dist/
 .pnp.js
 /.publish
 .publish/
+mailer/
 
 # testing
 /coverage

@@ -4,6 +4,29 @@ const hamburger = document.querySelector('.hamburger'),
       btnLink = document.querySelector('.promo__link'),
       btnAbout = document.querySelector('.promo__about');
 
+    // async function translation() {
+    //     const translateElements = document.querySelectorAll('.translate');
+    
+    //     translateElements.forEach(item => {
+    //         item.addEventListener('click', async function() {
+    //             const lang = this.getAttribute('id');
+    //             const languageElements = document.querySelectorAll('.language');
+                
+    //             try {
+    //                 const response = await fetch('./db.json');
+    //                 const languageData = await response.json();
+    
+    //                 languageElements.forEach(function(langElement) {
+    //                     const key = langElement.getAttribute('key');
+    //                     langElement.textContent = languageData[lang][key];
+    //                 });
+    //             } catch (error) {
+    //                 console.error('Error fetching data from db.json:', error);
+    //             }
+    //         });
+    //     });
+    // }
+    // translation();
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
 });
