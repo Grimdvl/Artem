@@ -12,6 +12,7 @@ dist/
 /.publish
 .publish/
 mailer/
+src/db.json
 
 # testing
 /coverage
