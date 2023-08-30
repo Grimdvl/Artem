@@ -84,14 +84,13 @@ gulp.task('images', function () {
 });
 
 gulp.task('deploy', function() {
-    return gulp.src('./dist/**/*') // Изменяем путь на папку "dist"
+    return gulp.src('./dist/**/*')
         .pipe(ghPages({
-            branch: 'artem', // Замените 'your_branch_name' на желаемое название ветки
+            branch: 'artem',
             remoteUrl: 'https://github.com/Grimdvl/Artem.git'
         }));
 });
 
-// Обновленная задача 'default', включая новые задачи
 gulp.task('default', gulp.parallel(
     'watch',
     'server',
